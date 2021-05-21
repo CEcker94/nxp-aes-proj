@@ -12,8 +12,8 @@
  **		| Authors	| Date 		| Commit																	|
  **	----|-----------|-----------|---------------------------------------------------------------------------|
  ** 1	|	CE		|04-15-2021	| Created camera.h															|
- ** 2	|	CE		|04-20-2021	| Commentated the code																			|
- ** 3	|			|			|																			|
+ ** 2	|	CE		|04-20-2021	| Commentated the code														|
+ ** 3	|	CE		|05-21-2021	| Coded ADC_Config															|
  ** 4	|			|			|																			|
  ** 5	|			|			|																			|
  ** 6	|			|			|																			|
@@ -57,6 +57,7 @@
  * Prototypes
  ******************************************************************************/
 void CAM_Init(void);
-
+void SCTimer_Config(void);
+void ADC_Config(void);
 
 #endif /* CAMERA_CAMERA_H_ */

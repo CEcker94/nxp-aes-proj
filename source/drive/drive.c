@@ -130,9 +130,9 @@ void ESC_Init_Task(void *pvParameters)
 		//***************************************************************
 		//Testing Sequence for BLDC-Motors
 
-		/*CTIMER3->MSR[0] = CTIMER3_PWM_PERIOD - BLDC_PWM_FULLTHROTTLE;		//Set motor to full speed
+		CTIMER3->MSR[0] = CTIMER3_PWM_PERIOD - BLDC_PWM_FULLTHROTTLE;		//Set motor to full speed
 		CTIMER3->MSR[2] = CTIMER3_PWM_PERIOD - BLDC_PWM_FULLTHROTTLE;		//Set motor to full speed
-		vTaskDelay(1000);
+		/*vTaskDelay(1000);
 		CTIMER3->MSR[0] = CTIMER3_PWM_PERIOD - BLDC_PWM_STOPTHROTTLE;		//Stop motor
 		CTIMER3->MSR[2] = CTIMER3_PWM_PERIOD - BLDC_PWM_STOPTHROTTLE;		//Stop motor*/
 
