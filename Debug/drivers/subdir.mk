@@ -16,6 +16,7 @@ C_SRCS += \
 ../drivers/fsl_power.c \
 ../drivers/fsl_reset.c \
 ../drivers/fsl_rit.c \
+../drivers/fsl_sctimer.c \
 ../drivers/fsl_usart.c 
 
 OBJS += \
@@ -31,6 +32,7 @@ OBJS += \
 ./drivers/fsl_power.o \
 ./drivers/fsl_reset.o \
 ./drivers/fsl_rit.o \
+./drivers/fsl_sctimer.o \
 ./drivers/fsl_usart.o 
 
 C_DEPS += \
@@ -46,6 +48,7 @@ C_DEPS += \
 ./drivers/fsl_power.d \
 ./drivers/fsl_reset.d \
 ./drivers/fsl_rit.d \
+./drivers/fsl_sctimer.d \
 ./drivers/fsl_usart.d 
 
 

@@ -31,6 +31,7 @@ source/main_gustl.o source/main_gustl.d: ../source/main_gustl.c \
  C:\Users\chris\OneDrive\Desktop\NXP-Git\nxp-aes-proj\drivers/fsl_common.h \
  C:\Users\chris\OneDrive\Desktop\NXP-Git\nxp-aes-proj\drivers/fsl_gpio.h \
  ../source/drive/drive.h ../source/camera/camera.h \
+ C:\Users\chris\OneDrive\Desktop\NXP-Git\nxp-aes-proj\drivers/fsl_sctimer.h \
  ../source/rpmMeas/rpmMeas.h ../source/board/board_func.h \
  C:\Users\chris\OneDrive\Desktop\NXP-Git\nxp-aes-proj\utilities/fsl_debug_console.h \
  C:\Users\chris\OneDrive\Desktop\NXP-Git\nxp-aes-proj\component\serial_manager/serial_manager.h \
@@ -103,6 +104,8 @@ C:\Users\chris\OneDrive\Desktop\NXP-Git\nxp-aes-proj\drivers/fsl_gpio.h:
 ../source/drive/drive.h:
 
 ../source/camera/camera.h:
+
+C:\Users\chris\OneDrive\Desktop\NXP-Git\nxp-aes-proj\drivers/fsl_sctimer.h:
 
 ../source/rpmMeas/rpmMeas.h:
 

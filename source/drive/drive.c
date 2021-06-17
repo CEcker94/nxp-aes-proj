@@ -29,8 +29,8 @@
  **
  ** Contains initialization functions
  **
- ** CTIMER3 PWM 0/2 Channel --> Write to CTIMER1->MSR[2] for PWM (Right drive)
- **							--> Write to CTIMER1->MSR[0] for PWM (Right drive)
+ ** CTIMER3 PWM 0/2 Channel --> Write to CTIMER3->MSR[2] for PWM (Right drive)
+ **							--> Write to CTIMER3->MSR[0] for PWM (Left drive)
  **                      	--> Use only values in Range 240000-418000 !!!!
  **
  ** Left  BLDC PWM at Pin P[3][10] (J13 Pin7)
@@ -130,9 +130,9 @@ void ESC_Init_Task(void *pvParameters)
 		//***************************************************************
 		//Testing Sequence for BLDC-Motors
 
-		CTIMER3->MSR[0] = CTIMER3_PWM_PERIOD - BLDC_PWM_FULLTHROTTLE;		//Set motor to full speed
+		/*CTIMER3->MSR[0] = CTIMER3_PWM_PERIOD - BLDC_PWM_FULLTHROTTLE;		//Set motor to full speed
 		CTIMER3->MSR[2] = CTIMER3_PWM_PERIOD - BLDC_PWM_FULLTHROTTLE;		//Set motor to full speed
-		/*vTaskDelay(1000);
+		vTaskDelay(1000);
 		CTIMER3->MSR[0] = CTIMER3_PWM_PERIOD - BLDC_PWM_STOPTHROTTLE;		//Stop motor
 		CTIMER3->MSR[2] = CTIMER3_PWM_PERIOD - BLDC_PWM_STOPTHROTTLE;		//Stop motor*/
 
